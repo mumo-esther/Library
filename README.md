@@ -27,8 +27,7 @@ Imagine that you are the librarian of OOP University, and you need a tool to rec
 
 
 ## 🛠 Built With <a name="built-with"></a>
-    - Ruby
-    
+
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
