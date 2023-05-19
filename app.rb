@@ -43,7 +43,7 @@ class App
     puts
   end
 
-  def create_person
+  def create_person # rubocop:todo Metrics/MethodLength
     puts 'Do you want to create a student[1] or a teacher[2]? Enter the number.'
     person_type = gets.chomp.to_i
 

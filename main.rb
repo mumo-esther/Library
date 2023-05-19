@@ -1,6 +1,7 @@
 require_relative 'app'
 
-def main
+# rubocop:todo Metrics/MethodLength
+def main # rubocop:todo Metrics/CyclomaticComplexity, Metrics/MethodLength
   app = App.new
 
   loop do
@@ -28,5 +29,6 @@ def main
     end
   end
 end
+# rubocop:enable Metrics/MethodLength
 
 main
