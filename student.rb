@@ -5,7 +5,7 @@ class Student < Person
 
   # rubocop:disable
   def initialize(id, age, parent_permission: true, name: 'Unknown')
-    super(id, age, parent_permission:, name:)
+    super(id, age, parent_permission: parent_permission, name:name)
     @classroom = nil
   end
 

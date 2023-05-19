@@ -56,13 +56,13 @@ class App
     when 1
       print 'No parent permission [Y/N]: '
       parent_permission = gets.chomp.upcase == 'N'
-      student = Student.new(generate_id, age, parent_permission:, name:)
+      student = Student.new(generate_id, age, parent_permission:parent_permission, name:nae)
       people << student
       puts 'Student created successfully.'
     when 2
       print 'Enter Specialization: '
       specialization = gets.chomp
-      teacher = Teacher.new(generate_id, age, specialization, name:)
+      teacher = Teacher.new(generate_id, age, specialization, name:name)
       people << teacher
       puts 'Teacher created successfully.'
     else
