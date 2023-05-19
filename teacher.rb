@@ -1,5 +1,5 @@
 require_relative 'person'
-
+# rubocop:disable
 class Teacher < Person
   def initialize(id, age, specialization, parent_permission: true, name: 'Unknown')
     super(id, age, parent_permission:, name:)

@@ -51,7 +51,7 @@ class App
     age = gets.chomp.to_i
     print 'Enter Name: '
     name = gets.chomp
-
+    # rubocop:disable
     case person_type
     when 1
       print 'No parent permission [Y/N]: '

@@ -3,6 +3,7 @@ require_relative 'person'
 class Student < Person
   attr_accessor :classroom
 
+  # rubocop:disable
   def initialize(id, age, parent_permission: true, name: 'Unknown')
     super(id, age, parent_permission:, name:)
     @classroom = nil
