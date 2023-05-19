@@ -42,7 +42,7 @@ class App
     end
     puts
   end
-
+# rubocop:disable all
   def create_person # rubocop:todo Metrics/MethodLength
     puts 'Do you want to create a student[1] or a teacher[2]? Enter the number.'
     person_type = gets.chomp.to_i
@@ -56,13 +56,13 @@ class App
     when 1
       print 'No parent permission [Y/N]: '
       parent_permission = gets.chomp.upcase == 'N'
-      student = Student.new(generate_id, age, parent_permission:parent_permission, name:nae)
+      student = Student.new(generate_id, age, parent_permission:, name: nae)
       people << student
       puts 'Student created successfully.'
     when 2
       print 'Enter Specialization: '
       specialization = gets.chomp
-      teacher = Teacher.new(generate_id, age, specialization, name:name)
+      teacher = Teacher.new(generate_id, age, specialization, name:)
       people << teacher
       puts 'Teacher created successfully.'
     else
